@@ -49,6 +49,8 @@
 
 # Delphi history and backups
 __history/
+debug/
+release/
 *.~*
 
 # =========================
