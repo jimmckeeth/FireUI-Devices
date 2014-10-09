@@ -1,3 +1,5 @@
+Original blog post: http://delphi.org/2014/09/hello-moto-360-from-delphi-xe7/
+
 To install the Moto360 view, open the Moto360 package project and install it in the IDE.
 
 Plast Moto360View.png somewhere you can find easily

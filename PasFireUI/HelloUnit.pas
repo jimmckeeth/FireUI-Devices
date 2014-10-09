@@ -18,9 +18,11 @@ type
     Image1: TImage;
     StyleBook1: TStyleBook;
     Label5: TLabel;
+    Timer1: TTimer;
     procedure FormShow(Sender: TObject);
     procedure FormGesture(Sender: TObject; const EventInfo: TGestureEventInfo;
       var Handled: Boolean);
+    procedure Timer1Timer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,6 +36,7 @@ implementation
 
 {$R *.fmx}
 {$R *.Moto360.fmx  }
+{$R *.GearLive.fmx  }
 
 uses
   System.TypInfo, System.Devices, FMX.Platform, System.Rtti;
@@ -71,6 +74,11 @@ begin
     Label4.Text := 'Class: ' + GetEnumName(TypeInfo(TDeviceInfo.TDeviceClass), ord(devCls));
   end;
 
+  Label5.Text := Format('Design: %dx%d', [Self.Width, Self.Height]);
+end;
+
+procedure TForm10.Timer1Timer(Sender: TObject);
+begin
   Label5.Text := Format('Design: %dx%d', [Self.Width, Self.Height]);
 end;
 

@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{149AE30D-E715-4AEF-A3CD-0293A6A3BABB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FireUIViews\FireUIViews.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppFireUI\HelloFireUICpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PasFireUI\HelloFireUIPas.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FireUIViews">
+        <MSBuild Projects="FireUIViews\FireUIViews.dproj"/>
+    </Target>
+    <Target Name="FireUIViews:Clean">
+        <MSBuild Projects="FireUIViews\FireUIViews.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireUIViews:Make">
+        <MSBuild Projects="FireUIViews\FireUIViews.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HelloFireUICpp">
+        <MSBuild Projects="CppFireUI\HelloFireUICpp.cbproj"/>
+    </Target>
+    <Target Name="HelloFireUICpp:Clean">
+        <MSBuild Projects="CppFireUI\HelloFireUICpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HelloFireUICpp:Make">
+        <MSBuild Projects="CppFireUI\HelloFireUICpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="HelloFireUIPas">
+        <MSBuild Projects="PasFireUI\HelloFireUIPas.dproj"/>
+    </Target>
+    <Target Name="HelloFireUIPas:Clean">
+        <MSBuild Projects="PasFireUI\HelloFireUIPas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HelloFireUIPas:Make">
+        <MSBuild Projects="PasFireUI\HelloFireUIPas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FireUIViews;HelloFireUICpp;HelloFireUIPas"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FireUIViews:Clean;HelloFireUICpp:Clean;HelloFireUIPas:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FireUIViews:Make;HelloFireUICpp:Make;HelloFireUIPas:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

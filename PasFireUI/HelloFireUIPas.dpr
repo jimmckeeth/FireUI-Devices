@@ -1,10 +1,11 @@
-program HelloMoto;
+program HelloFireUIPas;
 
 uses
   System.StartUpCopy,
   FMX.Forms,
   HelloUnit in 'HelloUnit.pas' {Form10},
-  Moto360Device in '..\Moto360View\Moto360Device.pas';
+  Moto360Device in '..\FireUIViews\Moto360Device.pas',
+  GearLiveDevice in '..\FireUIViews\GearLiveDevice.pas';
 
 {$R *.res}
 

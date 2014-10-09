@@ -12,7 +12,6 @@ const
   ViewName = 'Moto360'; // The name of the view.
 
 {
-
   Add this after MobileDevices in
   %AppData%\Roaming\Embarcadero\BDS\15.0\MobileDevices.xml
 
@@ -26,7 +25,6 @@ const
     <LandscapeLeft Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
     <LandscapeRight Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
   </MobileDevice>
-
 }
 
 initialization
