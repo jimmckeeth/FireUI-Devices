@@ -34,7 +34,7 @@ initialization
     // The GearLive is 320x320 phyiscal and 213x213 logical with 240 PPI
     // Just like the Android Wear emulator
     TSize.Create(320, 320), TSize.Create(213, 213), // MinPhysicalSize(max, min), MinLogicalSize(max, min)
-    TOSVersion.TPlatform.pfAndroid, 278, // 240, //Select the platform and the pixel density.
+    TOSVersion.TPlatform.pfAndroid, 240, // 240, //Select the platform and the pixel density.
     True); // Exclusive
 
 finalization
