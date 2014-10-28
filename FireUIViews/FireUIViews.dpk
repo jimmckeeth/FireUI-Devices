@@ -32,6 +32,7 @@ requires
 
 contains
   Moto360Device in 'Moto360Device.pas',
-  GearLiveDevice in 'GearLiveDevice.pas';
+  GearLiveDevice in 'GearLiveDevice.pas',
+  AndroidWearComponent in 'AndroidWearComponent.pas';
 
 end.

@@ -1,0 +1,36 @@
+inherited Form2_GearLive: TForm2_GearLive
+  ClientHeight = 213
+  ClientWidth = 213
+  DesignerMasterStyle = 3
+  inherited CircleInner: TCircle
+    Visible = False
+  end
+  inherited CircleOuter: TCircle
+    Visible = False
+  end
+  inherited Label1: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 45.000000000000000000
+    Text = 'Hello Gear Live from XE7 C++'
+  end
+  inherited lblPhysical: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 96.000000000000000000
+  end
+  inherited lblPPI: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 144.000000000000000000
+  end
+  inherited lblClass: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 168.000000000000000000
+  end
+  inherited Image1: TImage
+    MultiResBitmap.Height = 144
+    MultiResBitmap.Width = 144
+  end
+  inherited lblLogical: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 120.000000000000000000
+  end
+end

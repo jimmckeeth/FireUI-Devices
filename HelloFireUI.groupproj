@@ -12,6 +12,9 @@
         <Projects Include="PasFireUI\HelloFireUIPas.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="CppBehavor\CppBehavior.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
     <Target Name="HelloFireUIPas:Make">
         <MSBuild Projects="PasFireUI\HelloFireUIPas.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CppBehavior">
+        <MSBuild Projects="CppBehavor\CppBehavior.cbproj"/>
+    </Target>
+    <Target Name="CppBehavior:Clean">
+        <MSBuild Projects="CppBehavor\CppBehavior.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppBehavior:Make">
+        <MSBuild Projects="CppBehavor\CppBehavior.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FireUIViews;HelloFireUICpp;HelloFireUIPas"/>
+        <CallTarget Targets="FireUIViews;HelloFireUICpp;HelloFireUIPas;CppBehavior"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FireUIViews:Clean;HelloFireUICpp:Clean;HelloFireUIPas:Clean"/>
+        <CallTarget Targets="FireUIViews:Clean;HelloFireUICpp:Clean;HelloFireUIPas:Clean;CppBehavior:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FireUIViews:Make;HelloFireUICpp:Make;HelloFireUIPas:Make"/>
+        <CallTarget Targets="FireUIViews:Make;HelloFireUICpp:Make;HelloFireUIPas:Make;CppBehavior:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
