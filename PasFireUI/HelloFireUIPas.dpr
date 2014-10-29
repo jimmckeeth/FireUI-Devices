@@ -5,7 +5,8 @@ uses
   FMX.Forms,
   HelloUnit in 'HelloUnit.pas' {Form10},
   Moto360Device in '..\FireUIViews\Moto360Device.pas',
-  GearLiveDevice in '..\FireUIViews\GearLiveDevice.pas';
+  GearLiveDevice in '..\FireUIViews\GearLiveDevice.pas',
+  LGGDevice in '..\FireUIViews\LGGDevice.pas';
 
 {$R *.res}
 

@@ -1,0 +1,37 @@
+inherited Form10_LGG: TForm10_LGG
+  ClientHeight = 187
+  ClientWidth = 187
+  DesignerMasterStyle = 3
+  inherited CircleInner: TCircle
+    Position.X = -64.000000000000000000
+    Position.Y = -16.000000000000000000
+    Visible = False
+  end
+  inherited CircleOuter: TCircle
+    Position.X = -81.000000000000000000
+    Position.Y = -25.000000000000000000
+    Visible = False
+  end
+  inherited Label1: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 113.000000000000000000
+    Text = 'Hello LG-G from Delphi XE7'
+  end
+  inherited Label2: TLabel
+    Position.Y = 72.000000000000000000
+  end
+  inherited Label3: TLabel
+    Position.Y = 120.000000000000000000
+  end
+  inherited Label4: TLabel
+    Position.Y = 144.000000000000000000
+  end
+  inherited Image1: TImage
+    MultiResBitmap.Height = 144
+    MultiResBitmap.Width = 144
+  end
+  inherited Label5: TLabel
+    Position.Y = 96.000000000000000000
+  end
+end

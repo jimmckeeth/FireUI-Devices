@@ -17,7 +17,7 @@ procedure Register;
 implementation
 
 uses
-  GearLiveDevice, Moto360Device;
+  GearLiveDevice, Moto360Device, LGGDevice;
 
 procedure Register;
 begin
@@ -28,7 +28,7 @@ end;
 
 function TAndroidWearViews.GetSupportedDevices: string;
 begin
-  Result := 'Gear Live & Moto 360';
+  Result := 'Gear Live, LG-G & Moto 360';
 end;
 
 end.

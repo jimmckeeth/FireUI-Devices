@@ -37,6 +37,7 @@ implementation
 {$R *.fmx}
 {$R *.Moto360.fmx  }
 {$R *.GearLive.fmx  }
+{$R *.LGG.fmx  }
 
 uses
   System.TypInfo, System.Devices, FMX.Platform, System.Rtti;
