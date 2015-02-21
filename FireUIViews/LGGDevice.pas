@@ -29,7 +29,7 @@ const
 
 initialization
 
-  TDeviceinfo.AddDevice(TDeviceinfo.TDeviceClass.Tablet, // Identified as Tablet
+  TDeviceinfo.AddDevice(TDeviceinfo.TDeviceClass.Watch, // Identified as Tablet
     ViewName,
     // The GearLive is 280x280 phyiscal and 182x187 logical with 240 PPI
     // Just like the Android Wear emulator

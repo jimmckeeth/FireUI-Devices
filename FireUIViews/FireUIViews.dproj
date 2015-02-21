@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{0CC7F7BD-F241-4CEC-87AF-17322F06F97C}</ProjectGuid>
         <MainSource>FireUIViews.dpk</MainSource>
-        <ProjectVersion>16.0</ProjectVersion>
+        <ProjectVersion>16.1</ProjectVersion>
         <FrameworkType>None</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
@@ -481,7 +481,7 @@
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
             </Deployment>
             <Platforms>
-                <Platform value="Android" ActiveMobileDevice="Moto360">True</Platform>
+                <Platform value="Android" ActiveMobileDevice="02c22e44f0a687c5">True</Platform>
                 <Platform value="iOSDevice">True</Platform>
                 <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">True</Platform>
                 <Platform value="OSX32">True</Platform>

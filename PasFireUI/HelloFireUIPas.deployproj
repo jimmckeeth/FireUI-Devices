@@ -44,17 +44,17 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="c:\program files (x86)\embarcadero\studio\15.0\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>HelloFireUIPas\library\lib\mips\</RemoteDir>
-            <RemoteName>libHelloFireUIPas.so</RemoteName>
+        <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>HelloFireUIPas\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>HelloFireUIPas\res\drawable\</RemoteDir>
-            <RemoteName>splash_image_def.xml</RemoteName>
+        <DeployFile Include="c:\program files (x86)\embarcadero\studio\15.0\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>HelloFireUIPas\library\lib\mips\</RemoteDir>
+            <RemoteName>libHelloFireUIPas.so</RemoteName>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>

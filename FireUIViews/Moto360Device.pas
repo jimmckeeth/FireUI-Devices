@@ -29,7 +29,7 @@ const
 
 initialization
 
-  TDeviceinfo.AddDevice(TDeviceinfo.TDeviceClass.Tablet, ViewName,
+  TDeviceinfo.AddDevice(TDeviceinfo.TDeviceClass.Watch, ViewName,
     // The Moto360 is 320x290 phyiscal and 240x218 logical with 213 PPI
     // The Android Wear emulator is 320x320 and 213x213 logical with 240 PPI
     TSize.Create(320, 290), TSize.Create(240, 218), // MinPhysicalSize(max, min), MinLogicalSize(max, min)
