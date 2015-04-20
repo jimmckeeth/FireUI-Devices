@@ -29,16 +29,16 @@ const
 
 initialization
 
-  TDeviceinfo.AddDevice(TDeviceinfo.TDeviceClass.Watch, // Identified as Tablet
+ { TDeviceinfo.AddDevice(TDeviceinfo.TDeviceClass.Watch, // Identified as Tablet
     ViewName,
     // The GearLive is 280x280 phyiscal and 182x187 logical with 240 PPI
     // Just like the Android Wear emulator
     TSize.Create(280, 280), TSize.Create(187, 187), // MinPhysicalSize(max, min), MinLogicalSize(max, min)
     TOSVersion.TPlatform.pfAndroid, 240, //Select the platform and the pixel density.
-    True); // Exclusive
+    True); // Exclusive     }
 
 finalization
-
+ {
   TDeviceinfo.RemoveDevice(ViewName); // To unregister the view after unistalling the package.
-
+ }
 end.
