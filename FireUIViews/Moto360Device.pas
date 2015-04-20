@@ -13,17 +13,17 @@ const
 
 {
   Add this after MobileDevices in
-  %AppData%\Roaming\Embarcadero\BDS\15.0\MobileDevices.xml
+  %AppData%\Embarcadero\BDS\16.0\DevicePresets.xml
 
   <MobileDevice>
     <Displayname>Moto360</Displayname>
     <Name>Moto360</Name>
     <DevicePlatform>3</DevicePlatform>
     <FormFactor>2</FormFactor>
-    <Portrait Enabled="True" Width="240" Height="218" Top="102" Left="29" StatusbarHeight="0" StatusBarPos="0" Artwork="<Fullpath>\Moto360View\Moto360.png" />
-    <UpsideDown Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
-    <LandscapeLeft Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
-    <LandscapeRight Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
+    <Portrait Enabled="True" Width="240" Height="218" Top="102" Left="29" StatusbarHeight="0" StatusBarPos="0" Artwork="C:\Users\jim\Documents\Embarcadero\Studio\FireUI-Devices\Moto360.png" />
+    <UpsideDown Enabled="False" />
+    <LandscapeLeft Enabled="False" />
+    <LandscapeRight Enabled="False" />
   </MobileDevice>
 }
 
