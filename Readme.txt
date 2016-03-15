@@ -5,15 +5,16 @@ To install the new views, open the FireUIViews package project and install it in
 Move the Moto360.png and GearLive.png somewhere you can find easily
 
 Edit the MobileDevices.xml file found in
-  %AppData%\Roaming\Embarcadero\BDS\15.0\MobileDevices.xml
+  %AppData%\Embarcadero\BDS\17.0\DevicePresets.xml
 Adding the following after MobileDevices
 Replace "<Fullpath>" will the full path to the Moto306.png file.
 
   <MobileDevice>
-    <Displayname>Moto360</Displayname>
     <Name>Moto360</Name>
+    <Displayname>Moto 360</Displayname>
     <DevicePlatform>3</DevicePlatform>
     <FormFactor>2</FormFactor>
+    <UserData>True</UserData>
     <Portrait Enabled="True" Width="240" Height="218" Top="102" Left="29" StatusbarHeight="0" StatusBarPos="0" Artwork="<Fullpath>Moto360.png" />
     <UpsideDown Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
     <LandscapeLeft Enabled="False" Width="240" Height="218" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
@@ -23,10 +24,11 @@ Replace "<Fullpath>" will the full path to the Moto306.png file.
 Do the same for the Galaxy Gear and GearLive.png
 
   <MobileDevice>
-    <Displayname>GearLive</Displayname>
+    <Displayname>Gear Live</Displayname>
     <Name>GearLive</Name>
     <DevicePlatform>3</DevicePlatform>
     <FormFactor>2</FormFactor>
+    <UserData>True</UserData>
     <Portrait Enabled="True" Width="213" Height="213" Top="227" Left="313" StatusbarHeight="0" StatusBarPos="0" Artwork="<Fullpath>GearLive.png" />
     <UpsideDown Enabled="False" Width="213" Height="213" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
     <LandscapeLeft Enabled="False" Width="213" Height="213" Top="0" Left="0" StatusbarHeight="0" StatusBarPos="0" Artwork="" />
